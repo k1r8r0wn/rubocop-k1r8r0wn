@@ -14,7 +14,8 @@ Gem::Specification.new do |spec|
   DESCRIPTION
   spec.author = "Kirill Bobrov"
   spec.homepage = "https://github.com/k1r8r0wn/rubocop-k1r8r0wn"
-  spec.required_ruby_version = ">= 3.4"
+  # TODO: Fix later when the 3.4+ will ba available in CI
+  spec.required_ruby_version = ">= 3.2" # rubocop:disable Gemspec/RequiredRubyVersion
 
   spec.metadata["source_code_uri"] = spec.homepage
   spec.metadata["changelog_uri"] = "#{spec.homepage}/-/blob/master/CHANGELOG.md"
