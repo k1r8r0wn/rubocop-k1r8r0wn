@@ -1,0 +1,13 @@
+inherit_from:
+  - ./rubocop/rubocop.yml
+  - ./rubocop/rubocop_factory_bot.yml
+  - ./rubocop/rubocop_i18n.yml
+  - ./rubocop/rubocop_performance.yml
+  - ./rubocop/rubocop_rails.yml
+  - ./rubocop/rubocop_rake.yml
+  - ./rubocop/rubocop_rspec.yml
+  - ./rubocop/rubocop_rspec_rails.yml
+  - ./rubocop/rubocop_thread_safety.yml
+
+AllCops:
+  TargetRailsVersion: 8.0

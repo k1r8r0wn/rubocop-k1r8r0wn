@@ -11,12 +11,9 @@ Inspired: https://github.com/airbnb/ruby
 ```yml
 inherit_gem:
   # For Rails projects:
-  rubocop-k1r8r0wn: lib/rubocop.yml
-  # In other cases:
-  rubocop-k1r8r0wn: lib/rubocop.rails.yml
-
-AllCops:
-  TargetRubyVersion: 3.1.2
+  rubocop-k1r8r0wn: config/rubocop_rails_app.yml
+  # For Ruby projects:
+  rubocop-k1r8r0wn: config/rubocop_ruby_app.yml
 
 # Put the optional overrides below
 ```

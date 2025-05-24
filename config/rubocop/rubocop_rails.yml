@@ -1,0 +1,10 @@
+plugins: rubocop-rails
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - integration
+    - development
+    - test
+    - local
+

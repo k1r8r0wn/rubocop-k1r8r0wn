@@ -1,5 +1,2 @@
 inherit_gem:
-  rubocop-k1r8r0wn: lib/rubocop.yml
-
-AllCops:
-  TargetRubyVersion: 3.1.2
+  rubocop-k1r8r0wn: config/rubocop_ruby_gem.yml

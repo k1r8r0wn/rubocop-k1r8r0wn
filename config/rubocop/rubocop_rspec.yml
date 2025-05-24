@@ -1,0 +1,13 @@
+plugins: rubocop-rspec
+
+RSpec/IndexedLet:
+  AllowedPatterns: ['.*\d+']
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/ExampleLength:
+  CountAsOne: ['array', 'heredoc', 'method_call']
+
+RSpec/NestedGroups:
+  Max: 5

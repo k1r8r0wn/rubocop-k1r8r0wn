@@ -1,0 +1,51 @@
+inherit_mode:
+  merge:
+    - Exclude # Exclude directives from different config files to get merged, not overwritten
+
+AllCops:
+  TargetRubyVersion: 3.4
+  NewCops: enable
+  SuggestExtensions: true
+
+Metrics/BlockLength:
+  Max: 30
+  AllowedMethods: ["describe", "context", "shared_examples", "migration", "seed"]
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/ClassLength:
+  Max: 200
+
+Metrics/ModuleLength:
+  Max: 200
+
+Layout/LineLength:
+  Max: 140
+
+Layout/ExtraSpacing:
+  AllowForAlignment: false
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Style/Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Gemspec/DevelopmentDependencies:
+  EnforcedStyle: Gemfile

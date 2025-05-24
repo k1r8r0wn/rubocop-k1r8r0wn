@@ -1,0 +1,8 @@
+plugins: rubocop-i18n
+
+# https://github.com/rubocop/rubocop-i18n/blob/master/README.md
+I18n/GetText:
+  Enabled: false
+
+I18n/RailsI18n:
+  Enabled: false
