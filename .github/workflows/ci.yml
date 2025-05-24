@@ -6,7 +6,10 @@
 # run tests and linters.
 # https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-ruby
 name: "CI"
-on: [push, pull_request]
+on:
+  push:
+    branches: ["main"]
+  pull_request:
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -14,13 +17,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Install Ruby and gems
-        uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
+        uses: ruby/setup-ruby@v1
         with:
+          ruby-version: '3.2.1' # TODO: Update later to the 3.4+
           bundler-cache: true
       # Add or replace any other lints here
       - name: Security audit dependencies
         run: bundle exec bundler-audit --update
       - name: Security audit application code
-        run: bundle exec brakeman -q -w2
+        run: bundle exec brakeman -q -w2 --force
       - name: Lint Ruby files
         run: bundle exec rubocop --parallel
