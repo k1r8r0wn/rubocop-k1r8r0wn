@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1] - 24.05.2025
+## Fixed
+- CI pipeline
+
 ## [2.0.0] - 24.05.2025
 ### Added
 - Add CI & security check options via bundler-audit & brakeman

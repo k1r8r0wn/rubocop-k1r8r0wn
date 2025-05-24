@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-k1r8r0wn (2.0.0)
+    rubocop-k1r8r0wn (2.0.1)
       rubocop (~> 1.75)
       rubocop-factory_bot (~> 2.27)
       rubocop-i18n (~> 3.2)
