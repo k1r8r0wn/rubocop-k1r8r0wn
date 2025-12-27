@@ -16,6 +16,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0] - 27.12.2025
+### Changed
+- Update `ruby 3.4.2 -> 4.0.0`
+- Mass update gems 
+
 ## [2.0.1] - 24.05.2025
 ## Fixed
 - CI pipeline
