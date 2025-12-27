@@ -14,8 +14,7 @@ Gem::Specification.new do |spec|
   DESCRIPTION
   spec.author = "Kirill Bobrov"
   spec.homepage = "https://github.com/k1r8r0wn/rubocop-k1r8r0wn"
-  # TODO: Fix later when the 3.4+ will ba available in CI
-  spec.required_ruby_version = ">= 3.2" # rubocop:disable Gemspec/RequiredRubyVersion
+  spec.required_ruby_version = ">= 4.0.0"
 
   spec.metadata["source_code_uri"] = spec.homepage
   spec.metadata["changelog_uri"] = "#{spec.homepage}/-/blob/master/CHANGELOG.md"
@@ -29,20 +28,20 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 1.75"
-  spec.add_dependency "rubocop-factory_bot", "~> 2.27"
+  spec.add_dependency "rubocop", "~> 1.82"
+  spec.add_dependency "rubocop-factory_bot", "~> 2.28"
   spec.add_dependency "rubocop-i18n", "~> 3.2"
-  spec.add_dependency "rubocop-performance", "~> 1.25"
-  spec.add_dependency "rubocop-rails", "~> 2.32"
+  spec.add_dependency "rubocop-performance", "~> 1.26"
+  spec.add_dependency "rubocop-rails", "~> 2.34"
   spec.add_dependency "rubocop-rake", "~> 0.7"
-  spec.add_dependency "rubocop-rspec", "~> 3.6.0"
-  spec.add_dependency "rubocop-rspec_rails", "~> 2.31"
-  spec.add_dependency "rubocop-thread_safety", "~> 0.2"
+  spec.add_dependency "rubocop-rspec", "~> 3.8.0"
+  spec.add_dependency "rubocop-rspec_rails", "~> 2.32"
+  spec.add_dependency "rubocop-thread_safety", "~> 0.7"
 
-  spec.add_development_dependency "brakeman", "~> 7.0"
-  spec.add_development_dependency "bundler", "~> 2.6"
+  spec.add_development_dependency "brakeman", "~> 7.1"
+  spec.add_development_dependency "bundler", "~> 4"
   spec.add_development_dependency "bundler-audit", "~> 0.9"
-  spec.add_development_dependency "lefthook", "~> 1.11"
+  spec.add_development_dependency "lefthook", "~> 2"
   spec.add_development_dependency "pry-byebug", "~> 3.11"
-  spec.add_development_dependency "rake", "~> 13.2"
+  spec.add_development_dependency "rake", "~> 13.3"
 end
